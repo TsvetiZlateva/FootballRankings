@@ -12,8 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
-    <Folder Include="Features\" />
+    <ProjectReference Include="..\FootballRankings.Domain\FootballRankings.Data.csproj" />
   </ItemGroup>
 
 </Project>
