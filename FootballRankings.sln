@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballRankings.Api", "Foo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballRankings.Application", "FootballRankings.Application\FootballRankings.Application.csproj", "{252B6224-7559-41ED-BD88-62003387670E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballRankings.Data", "FootballRankings.Domain\FootballRankings.Data.csproj", "{2EF19BC4-1696-403A-ACB2-C5B301A2397C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballRankings.Data", "FootballRankings.Data\FootballRankings.Data.csproj", "{2EF19BC4-1696-403A-ACB2-C5B301A2397C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballRankings.Tests", "FootballRankings.Tests\FootballRankings.Tests.csproj", "{70CB4807-D330-48BF-8BCE-BA85CA98E49A}"
 EndProject
