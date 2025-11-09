@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FootballRankings.Application\FootballRankings.Application.csproj" />
-    <ProjectReference Include="..\FootballRankings.Domain\FootballRankings.Data.csproj" />
+    <ProjectReference Include="..\FootballRankings.Data\FootballRankings.Data.csproj" />
   </ItemGroup>
 
 </Project>
