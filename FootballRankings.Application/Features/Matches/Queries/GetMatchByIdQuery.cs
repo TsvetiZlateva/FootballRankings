@@ -31,7 +31,8 @@ namespace FootballRankings.Application.Features.Matches.Queries
                 AwayTeamName = match.AwayTeam.Name,
                 HomeGoals = match.HomeGoals,
                 AwayGoals = match.AwayGoals,
-                PlayedAt = match.PlayedAt
+                PlayedAt = match.PlayedAt,
+                RowVersion = Convert.ToBase64String(match.RowVersion)
             };
         }
     }

@@ -10,5 +10,6 @@
         public int HomeGoals { get; set; }
         public int AwayGoals { get; set; }
         public DateTime PlayedAt { get; set; }
+        public string RowVersion { get; set; } = "";
     }
 }

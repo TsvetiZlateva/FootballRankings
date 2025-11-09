@@ -66,7 +66,8 @@ namespace FootballRankings.Application.Features.Matches.Commands
                 AwayTeamName = away.Name,
                 HomeGoals = entity.HomeGoals,
                 AwayGoals = entity.AwayGoals,
-                PlayedAt = entity.PlayedAt
+                PlayedAt = entity.PlayedAt,
+                RowVersion = Convert.ToBase64String(entity.RowVersion)
             };
         }
     }

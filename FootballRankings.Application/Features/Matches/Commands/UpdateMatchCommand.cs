@@ -40,7 +40,6 @@ namespace FootballRankings.Application.Features.Matches.Commands
                 throw new KeyNotFoundException("Match not found.");
             }
 
-            // optimistic concurrency
             db.Entry(matchToBeUpdated).Property(x => x.RowVersion).OriginalValue = Convert.FromBase64String(r.RowVersion);
 
             matchToBeUpdated.HomeGoals = r.HomeGoals;
@@ -58,7 +57,8 @@ namespace FootballRankings.Application.Features.Matches.Commands
                 AwayTeamName = matchToBeUpdated.AwayTeam.Name,
                 HomeGoals = matchToBeUpdated.HomeGoals,
                 AwayGoals = matchToBeUpdated.AwayGoals,
-                PlayedAt = matchToBeUpdated.PlayedAt
+                PlayedAt = matchToBeUpdated.PlayedAt,
+                RowVersion = Convert.ToBase64String(matchToBeUpdated.RowVersion)
             };
         }
     }

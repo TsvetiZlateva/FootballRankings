@@ -24,7 +24,7 @@ namespace FootballRankings.Data.Models
         public string? Coach { get; set; }
 
         [Timestamp]
-        public byte[] RowVersion { get; set; }
+        public byte[] RowVersion { get; set; } = Array.Empty<byte>();
 
         public virtual ICollection<Match> HomeTeamMatches { get; set; }
         public virtual ICollection<Match> AyawTeamMatches { get; set; }

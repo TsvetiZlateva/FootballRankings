@@ -56,6 +56,7 @@ namespace FootballRankings.Application.Features.Teams.Commands
                 Name = teamToBeUpdated.Name,
                 FoundedYear = teamToBeUpdated.FoundedYear,
                 Coach = teamToBeUpdated.Coach,
+                RowVersion = Convert.ToBase64String(teamToBeUpdated.RowVersion)
             };
         }
     }

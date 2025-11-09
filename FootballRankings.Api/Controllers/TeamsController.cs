@@ -16,10 +16,10 @@ namespace FootballRankings.Api.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id:int}", Name = nameof(GetById))]
+        [HttpGet("{id:int}", Name = nameof(GetTeamById))]
         [ProducesResponseType(typeof(TeamDto), 200)]
         [ProducesResponseType(404)]
-        public async Task<IActionResult> GetById(int id, CancellationToken ct)
+        public async Task<IActionResult> GetTeamById(int id, CancellationToken ct)
         {
             var dto = await Mediator.Send(new GetTeamByIdQuery { Id = id }, ct);
             return Ok(dto);
@@ -31,7 +31,7 @@ namespace FootballRankings.Api.Controllers
         public async Task<IActionResult> Create([FromBody] CreateTeamCommand command, CancellationToken ct)
         {
             var dto = await Mediator.Send(command, ct);
-            return CreatedAtRoute(nameof(GetById), new { id = dto.Id }, dto);
+            return CreatedAtRoute(nameof(GetTeamById), new { id = dto.Id }, dto);
         }
 
         [HttpPut("{id:int}")]
